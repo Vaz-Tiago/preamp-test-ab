@@ -12,8 +12,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <div>
-          <button>TESTE A</button>
-          <button>TESTE B</button>
+          <button className={styles.buttonA}>TESTE A</button>
+          <button className={styles.buttonB}>TESTE B</button>
         </div>
       </main>
     </div>

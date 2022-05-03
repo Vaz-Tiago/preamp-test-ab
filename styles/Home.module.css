@@ -12,6 +12,22 @@
   align-items: center;
 }
 
+.buttonA {
+  height: 40px;
+  padding: 10px;
+  width: 150px;
+  background-color: yellowgreen;
+  border: none;
+}
+
+.buttonB {
+  height: 40px;
+  padding: 10px;
+  width: 150px;
+  background-color: indianred;
+  border: none;
+}
+
 .footer {
   display: flex;
   flex: 1;
