@@ -12,6 +12,27 @@
   align-items: center;
 }
 
+.linkA {
+  height: 40px;
+  padding: 10px;
+  width: 150px;
+  background-color: yellowgreen;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.linkB {
+  height: 40px;
+  padding: 10px;
+  width: 150px;
+  background-color: indianred;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
 .footer {
   display: flex;
   flex: 1;

@@ -1,0 +1,11 @@
+{
+  "name": "AboutContent",
+  "location": "About",
+  "selector": "none",
+  "previewUrl": "http://localhost:3000/about?preview=va",
+  "urlMatch": "^http?:\\/\\/[^\\/]+\\/about\\/",
+  "siteId": "4yAVcjLowMHN3F1olp3w2y",
+  "placementId": "6ctB3tArfBTBKmq16HqOQR",
+  "assetIds": [],
+  "archived": 0
+}

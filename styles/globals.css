@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+.preampjs [data-preamp],
+.fusejs [data-fuse] {
+  opacity: 0 !important;
+}
