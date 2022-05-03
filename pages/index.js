@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Placement, Control, Asset } from "@redventures/preamp-for-react";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -11,10 +12,15 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div>
-          <button className={styles.buttonA}>TESTE A</button>
-          <button className={styles.buttonB}>TESTE B</button>
-        </div>
+        <Placement name="Home">
+          <Control>
+            <button className={styles.buttonA}>TESTE A</button>
+          </Control>
+          <Asset
+            name="ButtonB"
+            lazy={<button className={styles.buttonB}>TESTE B</button>}
+          />
+        </Placement>
       </main>
     </div>
   );
