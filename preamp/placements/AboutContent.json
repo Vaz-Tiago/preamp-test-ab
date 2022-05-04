@@ -1,0 +1,11 @@
+{
+  "name": "AboutContent",
+  "location": "About",
+  "selector": "none",
+  "previewUrl": "https://preamp-test-ab.vercel.app/about",
+  "urlMatch": "^https?:\\/\\/[^\\/]+\\/subA\\/",
+  "siteId": "4yAVcjLowMHN3F1olp3w2y",
+  "placementId": "6ctB3tArfBTBKmq16HqOQR",
+  "assetIds": [],
+  "archived": 0
+}

@@ -12,21 +12,25 @@
   align-items: center;
 }
 
-.buttonA {
+.linkA {
   height: 40px;
   padding: 10px;
   width: 150px;
   background-color: yellowgreen;
   border: none;
+  text-decoration: none;
+  text-align: center;
 }
 
-.buttonB {
+.linkB {
   height: 40px;
   padding: 10px;
   width: 150px;
   background-color: indianred;
   border: none;
   color: #fff;
+  text-decoration: none;
+  text-align: center;
 }
 
 .footer {

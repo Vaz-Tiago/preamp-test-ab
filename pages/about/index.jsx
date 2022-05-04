@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
+import React, { useState, useEffect } from "react";
 import { Placement, Control, Asset } from "@redventures/preamp-for-react";
 
-import CustomHead from "../components/CustomHead";
-import styles from "../styles/Home.module.css";
+import CustomHead from "../../components/CustomHead";
 
-export default function Home() {
+import OriginalContent from "./OriginalContent";
+import VariantAContent from "./VariantA";
+import styles from "../../styles/Home.module.css";
+
+export default function About() {
   const [decisionTaken, setDecisionTaken] = useState(false);
 
   useEffect(() => {
@@ -20,21 +22,17 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <CustomHead
-        title="Home"
-        description="Estudo de implementação de teste A/B com PREAMP"
+        title="About page"
+        description="this page is about our test"
       />
       <main className={styles.main}>
         {decisionTaken && (
           <Placement name="Home">
             <Control>
-              <Link href="/about">
-                <a className={styles.linkA}>About</a>
-              </Link>
+              <OriginalContent />
             </Control>
             <Asset name="ButtonB">
-              <Link href="/about">
-                <a className={styles.linkB}>About</a>
-              </Link>
+              <VariantAContent />
             </Asset>
           </Placement>
         )}
