@@ -7,14 +7,22 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [decisionTaken, setDecisionTaken] = useState(false);
+  const event = () => {
+    preamp(
+      "run",
+      _Cohesion.preamp.siteId,
+      _Cohesion.preamp,
+      function (err, decision) {
+        if (err) return console.error("Preamp Error", err);
+        console.log("Preamp Decision", decision);
+      }
+    );
+  };
 
   useEffect(() => {
-    const preampDecisionInterval = setInterval(() => {
-      if (window._Preamp?.actions?.experienceNumber) {
-        setDecisionTaken(true);
-        clearInterval(preampDecisionInterval);
-      }
-    }, 100);
+    cohesion("ready", function () {
+      setDecisionTaken(true);
+    });
   }, []);
 
   return (
@@ -38,6 +46,7 @@ export default function Home() {
             </Asset>
           </Placement>
         )}
+        <button onClick={() => event()}>Disparar Evento</button>
       </main>
     </div>
   );

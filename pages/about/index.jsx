@@ -11,12 +11,9 @@ export default function About() {
   const [decisionTaken, setDecisionTaken] = useState(false);
 
   useEffect(() => {
-    const preampDecisionInterval = setInterval(() => {
-      if (window._Preamp?.actions?.experienceNumber) {
-        setDecisionTaken(true);
-        clearInterval(preampDecisionInterval);
-      }
-    }, 100);
+    cohesion("ready", function () {
+      setDecisionTaken(true);
+    });
   }, []);
 
   return (
